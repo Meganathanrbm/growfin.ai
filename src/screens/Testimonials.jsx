@@ -19,24 +19,28 @@ const Testimonials = () => {
   return (
     <section className="px-20 w-full">
       {/* brands */}
-      <div className="flex justify-center items-center p-12">
+      <div className="flex justify-center lg:flex-nowrap flex-wrap items-center p-6 lg:p-12">
         {brandLogos.map((logo, i) => (
           <img
             key={i}
             alt="logo"
-            className={`object-cover h-[35px] w-auto mx-20`}
+            className={`object-cover h-[35px] w-auto mx-20 lg:p-0 m-4 `}
             src={logo.logo}
           />
         ))}
       </div>
       {/* review */}
-      <div className="mb-10">
+      <div className=" mb-5 lg:mb-10">
         <div className="flex justify-center items-end">
-          <span className="border border-[#57534E] w-44"></span>
-          <img src={quotes} alt="quotes" className="h-[50px] w-[60px] mx-6" />
-          <span className="border border-[#57534E] w-44"></span>
+          <span className="border border-[#57534E] w-36 lg:w-44"></span>
+          <img
+            src={quotes}
+            alt="quotes"
+            className="lg:h-[50px] h-[40px] w-[50px] lg:w-[60px] mx-4 lg:mx-6"
+          />
+          <span className="border border-[#57534E] w-36 lg:w-44"></span>
         </div>
-        <blockquote className="p-8 text-center font-semibold leading-8 text-[21px]">
+        <blockquote className="lg:p-8 p-6 text-center font-semibold leading-8 text-lg lg:text-[21px]">
           "Growfin’s Cash Application has helped us streamline the entire cash
           application <br /> process with less manual intervention & timely
           posting of payments. We were able <br /> to achieve one of our key
@@ -46,9 +50,9 @@ const Testimonials = () => {
           <span className="font-semibold">– Rohit Namboodiri</span>, AR Manager,
           Locus
         </p>
-        <div className="flex justify-center gap-2 my-8 items-center">
-          <span className="h-[16px] w-[16px] bg-[#93C5FD] rounded-full"></span>
-          <span className="h-[16px] w-[16px] bg-[#DBEAFE] rounded-full"></span>
+        <div className="flex justify-center gap-2 my-4 lg:my-8 items-center">
+          <span className="lg:h-[16px] h-[10px] w-[10px] lg:w-[16px] bg-[#93C5FD] rounded-full"></span>
+          <span className="lg:h-[16px] h-[10px] w-[10px] lg:w-[16px] bg-[#DBEAFE] rounded-full"></span>
         </div>
       </div>
     </section>
