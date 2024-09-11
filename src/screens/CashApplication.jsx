@@ -37,11 +37,19 @@ const CashApplication = () => {
       {/* list */}
 
       {list.map((it, i) => (
-        <div className="flex my-6">
-          <h5 className="font-bold text-2xl w-[450px]">{it.title}</h5>
-          <div className={` flex w-full ${i !== 2 ? "border-b-2" : ""} pb-6`}>
-            <p className="text-base w-[500px] px-4 pr-20">{it.desc}</p>
-            <img src={it.img} alt="brand-logo" className="w-auto h-[30px]" />
+        <div className="flex lg:flex-row flex-col my-6">
+          <h5 className="font-bold pb-1 text-2xl w-[300px] lg:w-[450px]">{it.title}</h5>
+          <div
+            className={` flex w-full ${
+              i !== 2 ? "border-b-2" : ""
+            } pb-6 lg:flex-row flex-col`}
+          >
+            <p className="text-base w-[300px] lg:w-[500px] px-4 pr-20">{it.desc}</p>
+            <img
+              src={it.img}
+              alt="brand-logo"
+              className="w-auto object-contain h-[20px] lg:h-[30px]"
+            />
           </div>
         </div>
       ))}

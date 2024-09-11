@@ -47,7 +47,7 @@ const Experience = () => {
           <div key={i} className="p-6 bg-white w-[305px] m-4  h-[420px]">
             <img src={it.logo} alt="icon" className="h-[55px] w-[55px] my-4" />
             <h4 className="font-bold my-6 text-xl">{it.title}</h4>
-            <p className="text-lg">{it.desc}</p>
+            <p className="text-lg md:line-clamp-3 xl:line-clamp-none">{it.desc}</p>
           </div>
         ))}
       </div>

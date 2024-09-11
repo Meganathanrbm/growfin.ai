@@ -18,10 +18,10 @@ const Home = () => {
             with Growfin’s ML-powered Cash Application that delivers accurate,
             touchless posting.
           </p>
-          <div className="flex gap-4 lg:gap-6">
+          <div className="flex lg:flex-row flex-col gap-4 lg:gap-6">
             <button
               className={
-                "text-black font-semibold px-5 text-base leading-4 p-3 rounded-xl bg-secondary"
+                "text-black font-semibold px-5 text-base leading-4 p-3  rounded-xl bg-secondary"
               }
             >
               Schedule a Demo

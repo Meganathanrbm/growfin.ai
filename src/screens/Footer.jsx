@@ -7,11 +7,6 @@ const Footer = () => {
       <div className="">
         <div className="">
           <p className="text-[#FFFFFF] text-[15px] mb-1">Features</p>
-          <div className="">
-            {Features.map((item) => (
-              <p className="text-[#FFFFFF] cursor-pointer text-base py-1">{item}</p>
-            ))}
-          </div>
         </div>
       </div>
       <div className=""></div>

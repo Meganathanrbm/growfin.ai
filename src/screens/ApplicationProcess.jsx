@@ -24,12 +24,12 @@ const ApplicationProcess = () => {
         </p>
       </div>
       {/* sub tabs */}
-      <div className="flex justify-between">
+      <div className="flex lg:flex-row flex-col justify-between">
         {tabs.map((ti, i) => (
           <div
             className={`${
               i == 0
-                ? "text-[#1E40AF] font-bold border-b-[4px] border-[#1E40AF]  px-8"
+                ? "text-[#1E40AF] font-bold border-b-[4px] border-[#1E40AF] px-4 lg:px-8"
                 : "text-black font-medium"
             }`}
           >
@@ -62,7 +62,7 @@ const ApplicationProcess = () => {
         </div>
         {/* right image */}
         <div className="">
-          <img src={image1} alt="image" className="max-w-[600px]" />
+          <img src={image1} alt="image" className="max-w-[300px] lg:max-w-[500px]" />
         </div>
       </div>
     </section>
