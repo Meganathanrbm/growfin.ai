@@ -33,10 +33,9 @@ const About = () => {
     <section className="px-20 w-full pt-8 pb-2">
       {/* header */}
       <div className="p-4 flex flex-col justify-center items-center">
-        <h2 className="text-[40px] font-bold bg-gradient-to-b from-blue-600 to-blue-900 bg-clip-text text-transparent">
+        <h2 className="text-[40px] font-bold bg-gradient-to-b from-blue-600 to-black bg-clip-text text-transparent">
           What our Early Customers
-        </h2>
-        <h2 className="text-[40px] font-bold bg-gradient-to-b from-blue-950 to-blue-950 bg-clip-text text-transparent">
+          <br />
           have Already Achieved
         </h2>
       </div>
